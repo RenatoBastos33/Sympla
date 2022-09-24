@@ -1,12 +1,12 @@
 import React from 'react';
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
 import {GestureResponderEvent, View, ViewProps} from 'react-native';
-import ContrastText from '../atoms/text/contrastText';
-import LinkText from '../atoms/text/linkText';
+import LinkText from '../../atoms/text/linkText';
+import Title from '../../atoms/text/title';
 import styles from './styles';
 
 // import { Container } from './styles';
-type SectionHeaderProps = ViewProps & {
+export type SectionHeaderProps = ViewProps & {
   title: string;
   buttonText?: string;
   onButtonPress?: (event: GestureResponderEvent) => void;
@@ -20,7 +20,7 @@ const SectionHeader: React.FC<SectionHeaderProps> = ({
 }: SectionHeaderProps) => {
   return (
     <View style={[styles.container, style]}>
-      <ContrastText>{title}</ContrastText>
+      <Title>{title}</Title>
       <LinkText onPress={onButtonPress}>{buttonText}</LinkText>
     </View>
   );

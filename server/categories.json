@@ -1,0 +1,47 @@
+[
+  {
+    "id": 0,
+    "imageUrl": "https://images.sympla.com.br/62d08d2a556ad.jpg",
+    "description": "Réveillon 2023"
+  },
+  {
+    "id": 1,
+    "imageUrl": "https://images.sympla.com.br/62f1586c224e5.jpg",
+    "description": "Teatros e espetáculos"
+  },
+  {
+    "id": 2,
+    "imageUrl": "https://images.sympla.com.br/61655d235b08e.jpg",
+    "description": "Festas e shows"
+  },
+  {
+    "id": 4,
+    "imageUrl": "https://images.sympla.com.br/61655bcb2a098.jpg",
+    "description": "Infantil"
+  },
+  {
+    "id": 5,
+    "imageUrl": "https://images.sympla.com.br/61655d94491e1.jpg",
+    "description": "Congressos e palestras"
+  },
+  {
+    "id": 6,
+    "imageUrl": "https://images.sympla.com.br/61655cd018c97.jpg",
+    "description": "Passeios e tours"
+  },
+  {
+    "id": 7,
+    "imageUrl": "https://images.sympla.com.br/61655c5b0cbbe.jpg",
+    "description": "Eventos online"
+  },
+  {
+    "id": 8,
+    "imageUrl": "https://images.sympla.com.br/62f159b722168.jpg",
+    "description": "Stand Up Comedy"
+  },
+  {
+    "id": 9,
+    "imageUrl": "https://images.sympla.com.br/61655cf966d97.jpg",
+    "description": "Cursos e workshops"
+  }
+]

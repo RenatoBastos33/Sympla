@@ -1,13 +1,17 @@
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
 import {StyleSheet, ViewStyle} from 'react-native';
-import {HORIZONTAL_PADDING_APP} from '../../../../styles/spacing';
+import {VERTICAL_SPACE_12} from '../../../styles/spacing';
 
 interface Styles {
   container: ViewStyle;
+  header: ViewStyle;
 }
 
 export default StyleSheet.create<Styles>({
   container: {
-    paddingHorizontal: HORIZONTAL_PADDING_APP,
+    paddingVertical: VERTICAL_SPACE_12,
+  },
+  header: {
+    marginBottom: VERTICAL_SPACE_12,
   },
 });

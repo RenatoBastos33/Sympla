@@ -11,3 +11,5 @@ export const HORIZONTAL_SPACE_16 = pixelSizeHorizontal(16);
 export const HORIZONTAL_SPACE_12 = pixelSizeHorizontal(12);
 export const HORIZONTAL_SPACE_8 = pixelSizeHorizontal(8);
 export const HORIZONTAL_SPACE_4 = pixelSizeHorizontal(4);
+
+export const HORIZONTAL_PADDING_APP = HORIZONTAL_SPACE_8;
