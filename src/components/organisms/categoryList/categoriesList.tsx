@@ -1,13 +1,12 @@
-import React from 'react';
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
+import {Category} from '@app/types/categoryType';
+import CategoryChip from '@molecules/categoryChip';
+import React from 'react';
 import {FlatList, View} from 'react-native';
 import {
   HORIZONTAL_PADDING_APP,
   HORIZONTAL_SPACE_16,
 } from '../../../styles/spacing';
-// eslint-disable-next-line @typescript-eslint/no-unused-vars
-import {Category} from '../../../types/categoryType';
-import CategoryChip from '../../molecules/categoryChip';
 import styles from './styles';
 
 type CategoryListProps = {

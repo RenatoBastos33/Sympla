@@ -1,7 +1,7 @@
+import {widthPixel} from '@utils/normalize';
 import React from 'react';
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
 import {Image, ImageProps, View} from 'react-native';
-import {widthPixel} from '../../../../utils/normalize';
 
 // import { Container } from './styles';
 

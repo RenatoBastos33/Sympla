@@ -1,8 +1,8 @@
+import LinkText from '@atoms/text/linkText';
+import Title from '@atoms/text/title';
 import React from 'react';
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
 import {GestureResponderEvent, View, ViewProps} from 'react-native';
-import LinkText from '../../atoms/text/linkText';
-import Title from '../../atoms/text/title';
 import styles from './styles';
 
 // import { Container } from './styles';

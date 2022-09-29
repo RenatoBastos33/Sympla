@@ -1,9 +1,9 @@
+import SectionHeader from '@molecules/sectionHeader';
 import React from 'react';
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
-import {View, ViewStyle} from 'react-native';
-import SectionHeader from '../../molecules/sectionHeader';
+import {SectionHeaderProps} from '@molecules/sectionHeader/sectionHeader';
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
-import {SectionHeaderProps} from '../../molecules/sectionHeader/sectionHeader';
+import {View, ViewStyle} from 'react-native';
 import styles from './styles';
 
 // import { Container } from './styles';

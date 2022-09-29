@@ -1,9 +1,9 @@
+import Avatar from '@atoms/images/avatar';
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
+import {AvatarProps} from '@atoms/images/avatar/avatar';
+import Body from '@atoms/text/body';
 import React from 'react';
 import {View} from 'react-native';
-import Avatar from '../../atoms/images/avatar';
-// eslint-disable-next-line @typescript-eslint/no-unused-vars
-import {AvatarProps} from '../../atoms/images/avatar/avatar';
-import Body from '../../atoms/text/body';
 import styles from './styles';
 
 // import { Container } from './styles';
