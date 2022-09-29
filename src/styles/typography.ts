@@ -27,6 +27,7 @@ export const FONT_WEIGHT_BOLD: fontWeightType = '700';
 // FONT SIZE
 export const FONT_SIZE_20: number = fontPixel(20);
 export const FONT_SIZE_18: number = fontPixel(18);
+export const FONT_SIZE_15: number = fontPixel(15);
 export const FONT_SIZE_16: number = fontPixel(16);
 export const FONT_SIZE_14: number = fontPixel(14);
 export const FONT_SIZE_12: number = fontPixel(12);
