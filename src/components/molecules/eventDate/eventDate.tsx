@@ -15,9 +15,10 @@ type EventDateProps = ViewProps & {
 const EventDate: React.FC<EventDateProps> = ({
   startDate,
   endDate,
+  style,
 }: EventDateProps) => {
   return (
-    <View style={styles.container}>
+    <View style={[styles.container, style]}>
       <Subtitle style={styles.text}>
         {moment(startDate).format('DD MMM.').toUpperCase()}
       </Subtitle>

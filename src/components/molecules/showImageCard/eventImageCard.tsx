@@ -1,12 +1,18 @@
 import RoundIconButton from '@atoms/buttons/roundIconButton';
 import {pixelSizeHorizontal} from '@utils/normalize';
 import React from 'react';
-import {Image, View} from 'react-native';
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
+import {Image, ImageProps, View} from 'react-native';
 import styles from './styles';
 
 // import { Container } from './styles';
 
-const EventImageCard: React.FC = () => {
+type EventImageCard = ImageProps & {};
+
+const EventImageCard: React.FC<EventImageCard> = ({
+  source,
+  ...rest
+}: EventImageCard) => {
   const IMAGE_HEIGHT = pixelSizeHorizontal(100);
   const IMAGE_WIDTH = (IMAGE_HEIGHT * 16) / 9; //pixel ratio of 16:9
   const ICON_SIZE = pixelSizeHorizontal(38);
@@ -20,8 +26,9 @@ const EventImageCard: React.FC = () => {
         styles.container,
       ]}>
       <Image
-        source={{uri: 'https://images.sympla.com.br/630639109dba2-xs.png'}}
+        source={source}
         style={[{height: IMAGE_HEIGHT, width: IMAGE_WIDTH}, styles.image]}
+        {...rest}
       />
       <View
         style={[

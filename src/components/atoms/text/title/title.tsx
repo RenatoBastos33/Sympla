@@ -5,8 +5,16 @@ import styles from './styles';
 
 type TitleProps = TextProps & {};
 
-const Title: React.FC<TitleProps> = ({style, children}: TitleProps) => {
-  return <Text style={[styles.text, style]}>{children}</Text>;
+const Title: React.FC<TitleProps> = ({
+  style,
+  children,
+  ...rest
+}: TitleProps) => {
+  return (
+    <Text style={[styles.text, style]} {...rest}>
+      {children}
+    </Text>
+  );
 };
 
 export default Title;
