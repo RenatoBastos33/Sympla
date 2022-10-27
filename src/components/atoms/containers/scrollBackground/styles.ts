@@ -1,6 +1,6 @@
-import {pixelSizeHorizontal} from '@utils/normalize';
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
 import {StyleSheet, ViewStyle} from 'react-native';
+import {HORIZONTAL_PADDING_APP} from '../../../../styles/spacing';
 
 interface Styles {
   container: ViewStyle;
@@ -8,9 +8,7 @@ interface Styles {
 
 export default StyleSheet.create<Styles>({
   container: {
-    flexDirection: 'row',
-    justifyContent: 'space-between',
-    alignItems: 'center',
-    marginRight: pixelSizeHorizontal(10),
+    paddingHorizontal: HORIZONTAL_PADDING_APP,
+    flex: 1,
   },
 });

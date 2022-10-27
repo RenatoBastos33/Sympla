@@ -13,9 +13,9 @@ const EventImageCard: React.FC<EventImageCard> = ({
   source,
   ...rest
 }: EventImageCard) => {
-  const IMAGE_HEIGHT = pixelSizeHorizontal(100);
+  const IMAGE_HEIGHT = pixelSizeHorizontal(87);
   const IMAGE_WIDTH = (IMAGE_HEIGHT * 16) / 9; //pixel ratio of 16:9
-  const ICON_SIZE = pixelSizeHorizontal(38);
+  const ICON_SIZE = pixelSizeHorizontal(33);
   const MARGIN_ICON = pixelSizeHorizontal(5);
   const CONTAINER_ICON_SIZE_HORIZONTAL = (ICON_SIZE + MARGIN_ICON) * 2;
 

@@ -1,10 +1,13 @@
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
 import {Category} from '@app/types/categoryType';
+import {City} from '@app/types/cityType';
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
 import {Event} from '@app/types/eventTypes';
-import Background from '@atoms/containers/background';
+import ScrollBackground from '@atoms/containers/scrollBackground';
 import CategoryList from '@organisms/categoryList';
+import CityList from '@organisms/cityList';
 import EventList from '@organisms/eventList';
+import FeatureEventList from '@organisms/featureEventList';
 import Section from '@organisms/section';
 import React, {useEffect, useState} from 'react';
 
@@ -13,24 +16,32 @@ import React, {useEffect, useState} from 'react';
 const HomeScreen: React.FC = () => {
   const [categories, setCategories] = useState<Category[]>([]);
   const [events, setEvents] = useState<Event[]>([]);
+  const [cities, setCities] = useState<City[]>([]);
 
   useEffect(() => {
     var categoriesData = require('../../../server/categories.json');
     var eventsData = require('../../../server/events.json');
+    var citiesData = require('../../../server/cities.json');
     setCategories(categoriesData);
     setEvents(eventsData);
+    setCities(citiesData);
   }, []);
 
   return (
-    <Background>
+    <ScrollBackground>
       <Section buttonText="Ver tudo" title="Olá. Vem viver com a gente">
         <CategoryList data={categories} />
       </Section>
       <Section title="Recomendações pra você">
         <EventList data={events} />
       </Section>
-      <Section title="Em destaque na Sympla"></Section>
-    </Background>
+      <Section title="Em destaque na Sympla">
+        <FeatureEventList data={events} />
+      </Section>
+      <Section title="O melhor da cidade" buttonText="Ver tudo">
+        <CityList data={cities} />
+      </Section>
+    </ScrollBackground>
   );
 };
 

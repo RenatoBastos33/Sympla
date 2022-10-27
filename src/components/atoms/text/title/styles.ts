@@ -1,7 +1,7 @@
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
 import {StyleSheet, TextStyle} from 'react-native';
 import {Colors} from '../../../../styles';
-import {FONT_BOLD, FONT_SIZE_18} from '../../../../styles/typography';
+import {FONT_BOLD, FONT_SIZE_15} from '../../../../styles/typography';
 
 interface Styles {
   text: TextStyle;
@@ -10,7 +10,7 @@ interface Styles {
 export default StyleSheet.create<Styles>({
   text: {
     ...FONT_BOLD,
-    fontSize: FONT_SIZE_18,
+    fontSize: FONT_SIZE_15,
     color: Colors.BLACK,
   },
 });

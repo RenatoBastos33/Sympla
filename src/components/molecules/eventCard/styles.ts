@@ -1,4 +1,3 @@
-// eslint-disable-next-line @typescript-eslint/no-unused-vars
 import {GRAY_DARK} from '@app/styles/colors';
 import {VERTICAL_SPACE_4} from '@app/styles/spacing';
 import {pixelSizeHorizontal} from '@utils/normalize';
