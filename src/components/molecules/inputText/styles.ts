@@ -6,6 +6,7 @@ import {StyleSheet, ViewStyle} from 'react-native';
 interface Styles {
   container: ViewStyle;
   iconContainer: ViewStyle;
+  leftContainer: ViewStyle;
 }
 
 export default StyleSheet.create<Styles>({
@@ -16,8 +17,13 @@ export default StyleSheet.create<Styles>({
     elevation: 2,
     borderRadius: 4,
     backgroundColor: Colors.WHITE,
+    justifyContent: 'space-between',
   },
   iconContainer: {
     marginHorizontal: HORIZONTAL_SPACE_12,
+  },
+  leftContainer: {
+    flexDirection: 'row',
+    alignItems: 'center',
   },
 });

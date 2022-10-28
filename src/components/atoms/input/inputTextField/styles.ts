@@ -1,5 +1,5 @@
-// eslint-disable-next-line @typescript-eslint/no-unused-vars
 import {Colors} from '@styles';
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 import {StyleSheet, ViewStyle} from 'react-native';
 
 interface Styles {
