@@ -1,5 +1,6 @@
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
 import {Category} from '@app/types/categoryType';
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 import {City} from '@app/types/cityType';
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
 import {Event} from '@app/types/eventTypes';
@@ -30,7 +31,7 @@ const HomeScreen: React.FC = () => {
   }, []);
 
   return (
-    <ScrollBackground>
+    <ScrollBackground keyboardShouldPersistTaps="handled">
       <InputText placeholder="Eventos e Locais" />
       <Section buttonText="Ver tudo" title="Olá. Vem viver com a gente">
         <CategoryList data={categories} />
